@@ -3,13 +3,230 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
-		<!--导航部分-->
-		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
-		<!--页脚-->
-		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
-		<!--内容区-->
-		<link rel="stylesheet" type="text/css" href="css/contact.css"/>
+		
+		<style type="text/css">
+			
+					*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			
+
+		#wrap{
+			width: 100%;
+		}
+		#nav{
+				width: 100%;
+				height: 70px;
+				background: black;
+				/*text-align: center;*/
+			}
+			#nav_1 {
+				max-width: 1130px;
+				display: flex;
+				justify-content: space-between;
+				line-height: 70px;
+				margin: 0 auto;
+				/*overflow: hidden;*/
+			}
+			#nav #logo img{
+				vertical-align: middle;
+			}
+			
+			#href li{
+				display: inline-block;
+				margin-left: 30px;
+			}
+			#href li a{
+				color: #a8a8a8;
+				padding: 3px 10px;
+				border-radius: 5px;
+			}
+			
+			/*导航样式一*/
+			#nav_1 #href .navStyle1{
+				border:1px solid #7b7b7b;
+				color: white;
+			}
+			/*导航样式二*/
+			#nav_1 #href .navStyle2{
+				border: "";
+				color: #a8a8a8;
+			}
+			/*导航样式三*/
+			#nav_1 #href .navStyle3{
+				border:1px solid #7b7b7b;
+				color:white;
+			}
+			#logo2 {
+				vertical-align: middle;
+				display: none;
+			}
+			
+			/*竖导航条*/
+			
+			#vertical{
+				position: fixed;
+				top: 60px;
+				right: 5px;
+				width: 125px;
+				text-align: center;
+				border: 1px solid gray;
+				border-radius: 10px;
+				display: none;
+				z-index: 1111;
+				
+			}
+			#vertical li:nth-child(1){
+				margin-top: 0;
+			}
+			#vertical li{
+				display: block;
+			}
+			
+			.style3{
+					background:"gray",
+					color:"white",;
+					z-index: 1110;
+			}
+			#vertical li a{
+				color:black;
+				border:1px solid #7b7b7b ;
+				padding: 3px 10px;
+				border-radius: 5px;
+				background:rgba(99,99,99,0.3);
+			}
+			
+			
+			
+			
+			@media screen and (max-width:950px){
+				#href{
+					display: none;
+				}
+				#vertical{
+					display: none;
+				}
+				#logo2 {
+					display: block;
+					width: 22.4px;
+					height: 19px;
+					vertical-align: middle;
+					margin-top: 5px;
+					margin-right: 40px;
+					border-radius: 2px;
+				}
+				
+				#logo2 img{
+					width: 22.4px;
+					height: 19px;
+					border-radius: 2px;
+				}
+			}
+			
+		#footer{
+				position: absolute;
+				left: 0;
+				bottom: 40px;
+			}
+			#footer li{
+				display: inline-block;
+				margin-right: 50px;
+				
+			}
+			#footer_end{
+				margin-top: 20px;
+				text-align: center;
+			}
+			#footer_end img{
+				width: 25px;
+				cursor: pointer;
+			}
+			#footer_end #share{
+				margin-top: 20px;
+				margin-bottom: 40px;
+			}
+			#footer_end #footer_text{
+				display: block;
+				font-size: 10px;
+				color: #808080;
+				margin-bottom: 20px;
+			}
+			
+
+			
+		
+			
+			#wrap{
+			background: #f5f5f5;
+			padding-bottom: 20px;
+		}
+			#out{
+				width: 100%;
+			}
+			#content{
+				/*max-width: 1130px;*/
+				height: 508px;
+				margin: 0 auto;
+				text-align: center;
+				background: url(../img/contact/contact_point_bg.png) no-repeat;
+				background-position-x: 50%;
+				margin-top: 80px;
+				position: relative;
+			}
+			#content .phone {
+				/*margin: 30px 20px;*/
+				display: inline-block;
+			}
+			#content .phone p{
+				font-size: 13px;
+			}
+			#content .phone img{
+				vertical-align: top;
+				margin-top: -2px;
+				width: 35px;
+				height: 31px;
+			}
+			#content .phoneNum{
+				display:inline-block;
+				text-align: left;
+				font-size: 15px;
+				line-height: 15px;
+			}
+			/*#content div{
+				height: 33px;
+				line-height: 33px;
+				
+			}*/
+			#content h2{
+				display: inline-block;
+			}
+			#content span{
+				font-size: 18px;
+				color: #595757;
+				font-weight: bold;
+			}
+			#content img{
+				width: 31px;
+				height: 23px;
+				margin-top: 5px;
+				margin-right: 10px;
+				vertical-align: top;
+			}
+			#content_2{
+				width: 70%;
+				/*min-width: 640px;*/
+				margin: 80px auto;
+				display: flex;
+				justify-content: space-around;
+			}
+		</style>
 		
 	</head>
 	<body>

@@ -4,15 +4,254 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<!--导航部分-->
-		<link rel="stylesheet" type="text/css" href="css/nav.css" />
-		<!--页脚-->
-		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		
 		<!--内容-->
 		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/rendering.css"/>
-		
+		<style type="text/css">
+			
+					*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			
+
+		#wrap{
+			width: 100%;
+		}
+		#nav{
+				width: 100%;
+				height: 70px;
+				background: black;
+				/*text-align: center;*/
+			}
+			#nav_1 {
+				max-width: 1130px;
+				display: flex;
+				justify-content: space-between;
+				line-height: 70px;
+				margin: 0 auto;
+				/*overflow: hidden;*/
+			}
+			#nav #logo img{
+				vertical-align: middle;
+			}
+			
+			#href li{
+				display: inline-block;
+				margin-left: 30px;
+			}
+			#href li a{
+				color: #a8a8a8;
+				padding: 3px 10px;
+				border-radius: 5px;
+			}
+			
+			/*导航样式一*/
+			#nav_1 #href .navStyle1{
+				border:1px solid #7b7b7b;
+				color: white;
+			}
+			/*导航样式二*/
+			#nav_1 #href .navStyle2{
+				border: "";
+				color: #a8a8a8;
+			}
+			/*导航样式三*/
+			#nav_1 #href .navStyle3{
+				border:1px solid #7b7b7b;
+				color:white;
+			}
+			#logo2 {
+				vertical-align: middle;
+				display: none;
+			}
+			
+			/*竖导航条*/
+			
+			#vertical{
+				position: fixed;
+				top: 60px;
+				right: 5px;
+				width: 125px;
+				text-align: center;
+				border: 1px solid gray;
+				border-radius: 10px;
+				display: none;
+				z-index: 1111;
+				
+			}
+			#vertical li:nth-child(1){
+				margin-top: 0;
+			}
+			#vertical li{
+				display: block;
+			}
+			
+			.style3{
+					background:"gray",
+					color:"white",;
+					z-index: 1110;
+			}
+			#vertical li a{
+				color:black;
+				border:1px solid #7b7b7b ;
+				padding: 3px 10px;
+				border-radius: 5px;
+				background:rgba(99,99,99,0.3);
+			}
+			
+			
+			
+			
+			@media screen and (max-width:950px){
+				#href{
+					display: none;
+				}
+				#vertical{
+					display: none;
+				}
+				#logo2 {
+					display: block;
+					width: 22.4px;
+					height: 19px;
+					vertical-align: middle;
+					margin-top: 5px;
+					margin-right: 40px;
+					border-radius: 2px;
+				}
+				
+				#logo2 img{
+					width: 22.4px;
+					height: 19px;
+					border-radius: 2px;
+				}
+			}
+			
+		#footer{
+				position: absolute;
+				left: 0;
+				bottom: 40px;
+			}
+			#footer li{
+				display: inline-block;
+				margin-right: 50px;
+				
+			}
+			#footer_end{
+				margin-top: 20px;
+				text-align: center;
+			}
+			#footer_end img{
+				width: 25px;
+				cursor: pointer;
+			}
+			#footer_end #share{
+				margin-top: 20px;
+				margin-bottom: 40px;
+			}
+			#footer_end #footer_text{
+				display: block;
+				font-size: 10px;
+				color: #808080;
+				margin-bottom: 20px;
+			}
+			
+
+			
+			.jq22-container {
+				margin-top: 50px;
+			}
+			
+			#div1 {
+				margin: auto;
+				position: relative;
+			}
+			
+			.box {
+				float: left;
+				padding: 10px;
+				border: 1px solid #ccc;
+				background: #f7f7f7;
+				box-shadow: 0 0 8px #ccc;
+			}
+			
+			.box:hover {
+				box-shadow: 0 0 10px #999;
+			}
+			
+			.box img {
+				width: 240px;
+			}
+			
+			.box {
+				position: relative;
+				cursor: pointer;
+			}
+			
+			.box:hover .mask {
+				opacity: 0.5;
+				transition: all 0.5s linear;
+			}
+			
+			.mask {
+				background: black;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				text-align: center;
+				opacity: 0;
+				cursor: pointer;
+			}
+			
+			.mask img {
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+			}
+			
+			#out{
+				position: fixed;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.55);
+				z-index: 1000;
+				display: none;
+			}
+			
+			#bigImg {
+				max-width: 800px;
+				margin: auto;
+				/*position: absolute;
+				left: 500px;
+				top: 200px;
+				right: 500px;
+				bottom: 200px;*/
+				padding: 10px;
+				padding-bottom: 22px;
+				background: white;
+				cursor: pointer;
+			}
+			#bigImg img{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
 	</head>
 
 	<body>

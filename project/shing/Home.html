@@ -4,12 +4,298 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/nav.css" />
-		<link rel="stylesheet" type="text/css" href="css/footer.css" />
-		<link rel="stylesheet" type="text/css" href="css/home.css" />
 		<style type="text/css">
+					*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
 			
+					#footer{
+				position: absolute;
+				left: 0;
+				bottom: 40px;
+			}
+			#footer li{
+				display: inline-block;
+				margin-right: 50px;
+				
+			}
+			#footer_end{
+				margin-top: 20px;
+				text-align: center;
+			}
+			#footer_end img{
+				width: 25px;
+				cursor: pointer;
+			}
+			#footer_end #share{
+				margin-top: 20px;
+				margin-bottom: 40px;
+			}
+			#footer_end #footer_text{
+				display: block;
+				font-size: 10px;
+				color: #808080;
+				margin-bottom: 20px;
+			}
+			
+
+			
+			
+			
+		#wrap{
+			width: 100%;
+		}
+		#nav{
+				width: 100%;
+				height: 70px;
+				background: black;
+				/*text-align: center;*/
+			}
+			#nav_1 {
+				max-width: 1130px;
+				display: flex;
+				justify-content: space-between;
+				line-height: 70px;
+				margin: 0 auto;
+				/*overflow: hidden;*/
+			}
+			#nav #logo img{
+				vertical-align: middle;
+			}
+			
+			#href li{
+				display: inline-block;
+				margin-left: 30px;
+			}
+			#href li a{
+				color: #a8a8a8;
+				padding: 3px 10px;
+				border-radius: 5px;
+			}
+			
+			/*导航样式一*/
+			#nav_1 #href .navStyle1{
+				border:1px solid #7b7b7b;
+				color: white;
+			}
+			/*导航样式二*/
+			#nav_1 #href .navStyle2{
+				border: "";
+				color: #a8a8a8;
+			}
+			/*导航样式三*/
+			#nav_1 #href .navStyle3{
+				border:1px solid #7b7b7b;
+				color:white;
+			}
+			#logo2 {
+				vertical-align: middle;
+				display: none;
+			}
+			
+			/*竖导航条*/
+			
+			#vertical{
+				position: fixed;
+				top: 60px;
+				right: 5px;
+				width: 125px;
+				text-align: center;
+				border: 1px solid gray;
+				border-radius: 10px;
+				display: none;
+				z-index: 1111;
+				
+			}
+			#vertical li:nth-child(1){
+				margin-top: 0;
+			}
+			#vertical li{
+				display: block;
+			}
+			
+			.style3{
+					background:"gray",
+					color:"white",;
+					z-index: 1110;
+			}
+			#vertical li a{
+				color:black;
+				border:1px solid #7b7b7b ;
+				padding: 3px 10px;
+				border-radius: 5px;
+				background:rgba(99,99,99,0.3);
+			}
+			
+			
+			
+			
+			@media screen and (max-width:950px){
+				#href{
+					display: none;
+				}
+				#vertical{
+					display: none;
+				}
+				#logo2 {
+					display: block;
+					width: 22.4px;
+					height: 19px;
+					vertical-align: middle;
+					margin-top: 5px;
+					margin-right: 40px;
+					border-radius: 2px;
+				}
+				
+				#logo2 img{
+					width: 22.4px;
+					height: 19px;
+					border-radius: 2px;
+				}
+			}
+			
+			
+			
+			
+			#content{
+	max-width: 1130px;
+	margin: 0 auto;
+}
+#content img{
+	height: 160px;
+}
+.style1,.style2{
+	width: 1130px;
+	height: 160px;
+	margin: 0 auto;
+	border-bottom: 1px solid gainsboro;
+	font-size: 0;
+	cursor: pointer;
+}
+/*图片定位*/
+
+.leftImg{
+	float: left;
+	position: relative;
+}
+.leftImg2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.rightText{
+	display: inline-block;
+	width: 333px;
+	font-size: 15px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+/*中间颜色*/
+.middle{
+	width: 20px;
+	height: 160px;
+	background: gray;
+	float: left;
+}
+
+/*第二行*/
+.rightImg{
+	float: right;
+	position: relative;
+	margin-right: 200px;
+}
+.leftText{
+	display: inline-block;
+	width: 333px;
+	font-size: 15px;
+	margin-right: 10px;
+	margin-top: 20px;
+	text-align: right;
+}
+.middle2{
+	width: 20px;
+	height: 160px;
+	background: gray;
+	float: right;
+}
+
+@media only screen and (max-width: 640px) {
+		.style1{
+			width: 100%;
+			height: 320px;
+		}
+			.leftImg{
+				width: 100%;
+				float: left;
+				position: relative;
+			}
+			.leftImg2{
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: 0;
+			}
+		.rightText{
+			text-align: center;
+			width: 100%;
+			height: 160px;
+			font-size: 15px;
+		}
+		.rightText p{
+			padding: 0 10px;
+			text-align: left;
+		}
+			.middle{
+		display: none;
+	}
+	/*第二行*/
+	.style2{
+		width: 100%;
+		height: 320px;
+		text-align: center;
+	}
+		.rightImg{
+			width: 100%;
+		float: right;
+		position: relative;
+		margin-right: 0;
+	}
+	.leftText{
+		width: 100%;
+		height: 160px;
+		text-align: center;
+		font-size: 15px;
+		
+	}
+	.leftText p{
+		width: 100%;
+		text-align: left;
+		padding: 0 10px;
+	}
+	.middle2{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 		</style>
 	</head>
 
