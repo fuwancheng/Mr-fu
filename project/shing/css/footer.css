@@ -1,0 +1,29 @@
+		#footer{
+				position: absolute;
+				left: 0;
+				bottom: 40px;
+			}
+			#footer li{
+				display: inline-block;
+				margin-right: 50px;
+				
+			}
+			#footer_end{
+				margin-top: 20px;
+				text-align: center;
+			}
+			#footer_end img{
+				width: 25px;
+				cursor: pointer;
+			}
+			#footer_end #share{
+				margin-top: 20px;
+				margin-bottom: 40px;
+			}
+			#footer_end #footer_text{
+				display: block;
+				font-size: 10px;
+				color: #808080;
+				margin-bottom: 20px;
+			}
+			

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<!--导航部分-->
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<!--页脚-->
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<!--内容-->
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/rendering.css"/>
+		
+	</head>
+
+	<body>
+		<div id="wrap">
+			<!--导航栏-->
+			<div id="nav">
+				<div id="nav_1">
+					<a href="" id="logo"><img src="img/shininglogo.png" /></a>
+					<ul id="href">
+						<li><a href="Home.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="Rendering.html" style="border: 1px solid #7b7b7b;color: white;">Rendering</a></li>
+						<li><a href="3D.html">3D Animation</a></li>
+						<li><a href="Bim.html">Bim</a></li>
+						<li><a href="Contact.html">Contact</a></li>
+					</ul>
+					<a href="###" id="logo2"><img src="img/nav.png" /></a>
+					<!--竖条导航栏-->
+					<ul id="vertical">
+						<li><a href="Home1.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="Rendering.html"  style="border: 1px solid #7b7b7b;color: white;background: gray;">Rendering</a></li>
+						<li><a href="3D.html">3D Animation</a></li>
+						<li><a href="Bim.html">Bim</a></li>
+						<li><a href="Contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--内容区-->
+			<div id="content">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/rendering/Banner (1).jpg" /></div>
+						<div class="swiper-slide"><img src="img/rendering/Banner (2).jpg" /></div>
+						<div class="swiper-slide"><img src="img/rendering/Banner (3).jpg" /></div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<!--瀑布流-->
+				<div class="jq22-container">
+					<div class="jq22-content bgcolor-3">
+						<div id="div1">
+							<div class="box">
+								<div class="pic">
+									<img src="img/rendering/0.jpg" alt="">
+								</div>
+								<div class="mask"><img src="img/rendering/fangda.png" /></div>
+							</div>
+							<div class="box">
+								<div class="pic">
+									<img src="img/rendering/1.jpg" alt="">
+								</div>
+								<div class="mask"><img src="img/rendering/fangda.png" /></div>
+							</div>
+							<div class="box">
+								<div class="pic">
+									<img src="img/rendering/2.jpg" alt="">
+								</div>
+								<div class="mask"><img src="img/rendering/fangda.png" /></div>
+							</div>
+							<div class="box">
+								<div class="pic">
+									<img src="img/rendering/3.jpg" alt="">
+								</div>
+								<div class="mask"><img src="img/rendering/fangda.png" /></div>
+							</div>
+							<div class="box">
+								<div class="pic">
+									<img src="img/rendering/4.jpg" alt="">
+								</div>
+								<div class="mask"><img src="img/rendering/fangda.png" /></div>
+							</div>
+							<div class="box">
+								<div class="pic">
+									<img src="img/rendering/5.jpg" alt="">
+								</div>
+								<div class="mask"><img src="img/rendering/fangda.png" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!--页脚-->
+			<div id="footer_end">
+				<img src="img/about/mail.jpg" style="width: 25px;" title="img/about/mail_h.jpg" />
+				<div id="share">
+					<img src="img/about/facebook.jpg" title="img/about/facebook_h.jpg" />
+					<img src="img/about/youtube.jpg" title="img/about/youtube_h.jpg" />
+					<img src="img/about/linkedln.jpg" title="img/about/linkedln_h.jpg" />
+					<img src="img/about/twitter.jpg" title="img/about/twitter_h.jpg" />
+				</div>
+				<span id="footer_text">
+							Copyright © 1998-2015 shining Group
+						</span>
+			</div>
+		</div>
+		<div id="out"><div id="bigImg"></div></div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<!--导航-->
+	<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+	<!--页脚-->
+	<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+	<!--轮播插件-->
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--轮播-->
+	<script src="js/rendering.js" type="text/javascript" charset="utf-8"></script>
+	<!--瀑布流插件-->
+	<script src="js/jquery.waterfall.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#div1").waterfall({
+			itemClass: ".box",
+			minColCount: 2,
+			spacingHeight: 10,
+			resizeable: true,
+			ajaxCallback: function(success, end) {
+				var data = {
+					"data": [{
+						"src": "3.jpg"
+					}, {
+						"src": "4.jpg"
+					}, {
+						"src": "2.jpg"
+					}, {
+						"src": "5.jpg"
+					}, {
+						"src": "1.jpg"
+					}, {
+						"src": "6.jpg"
+					}]
+				};
+				var str = "";
+				var templ = '<div class="box" style="opacity:0;filter:alpha(opacity=0);"><div class="pic"><img src="img/rendering/{{src}}" /></div><div class="mask"><img src="img/rendering/fangda.png" /></div></div>'
+				for (var i = 0; i < data.data.length; i++) {
+					str += templ.replace("{{src}}", data.data[i].src);
+				}
+				$(str).appendTo($("#div1"));
+				//点击图片放大
+				$(".box").click(function() {
+					
+			$("#out").css("display","block");
+			console.log("cccccc");
+			var srcImg = $(this).find("img:nth-of-type(1)").attr("src");
+			var BigImg = $("<img/>");
+			console.log(srcImg);
+			BigImg.attr("src", srcImg);
+			$("#bigImg").html(BigImg);
+		});
+		$("#out").click(function() {
+			$("#out").css("display","none");
+			$("#bigImg").html("");
+		});
+		/////////////////////////////////
+				success();
+				end();
+			}
+		});
+//		$(".box").click(function() {
+//			$("#out").css("display","block");
+//			console.log("cccccc");
+//			var srcImg = $(this).siblings().find("img:nth-of-type(1)").attr("src");
+//			var BigImg = $("<img/>");
+//			console.log(srcImg);
+//			BigImg.attr("src", srcImg);
+//			$("#bigImg").html(BigImg);
+//		});
+//		$("#bigImg").click(function() {
+//			$("#bigImg").html("");
+//		});
+	</script>
+
+</html>

@@ -1,0 +1,27 @@
+$(".style1").on("mouseenter",function(){
+	$(this).find("div:nth-child(2)").css("background","#cedc37");
+	$(this).find(".leftImg2").animate({
+		opacity:1,
+		top:1,
+	},0);
+});
+$(".style1").on("mouseleave",function(){
+	$(this).find("div:nth-child(2)").css("background","gray");
+	$(this).find(".leftImg2").animate({
+		opacity:0,
+	},0);
+});
+
+$(".style2").on("mouseenter",function(){
+	$(this).find("div:nth-child(2)").css("background","#cedc37");
+	$(this).find(".leftImg2").animate({
+		opacity:1,
+		top:1,
+	},0);
+});
+$(".style2").on("mouseleave",function(){
+	$(this).find("div:nth-child(2)").css("background","gray");
+	$(this).find(".leftImg2").animate({
+		opacity:0,
+	},0);
+});

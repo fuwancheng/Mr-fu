@@ -1,0 +1,110 @@
+#wrap #nav{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+		}
+			#content .content_1{
+				width: 100%;
+				background: #e5e5e5;
+			}
+			#content .content_1 .center{
+				max-width: 1130px;
+				width: 75%;
+				margin: 0 auto;
+			}
+			#content .content_1 .left{
+				/*padding: 0px 0 64px;*/
+			}
+			#content .content_1 h2,h3{
+				display: inline-block;
+				color: #616161;
+			}
+			#content .content_1 h2{
+				width: 15px;
+				height: 25px;
+				padding: 0 5px;
+				line-height: 25px;
+				border: 1px solid #616161;
+				border-radius: 5px;
+			}
+			#content .content_1 .left_text{
+				display: block;
+				max-width: 316px;
+				width: 50%;
+				font-size: 14px;
+				margin-top: 30px;
+				font-weight: 500;
+			}
+			#content .content_1 .left_text1{
+				display: block;
+				max-width: 316px;
+				width: 70%;
+				font-size: 14px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				font-weight: 500;
+			}
+			#content .content_1 .left_img{
+				max-width: 392px;
+				min-width: 180px;
+				margin-top: 20px;
+				width: 50%;
+				font-size: 0;
+			}
+			#content .content_1 .left_img img{
+				width: 30%;
+				min-width: 60px;
+			}
+			#content .content_1 .center{
+				padding-top: 173px;
+				position: relative;
+			}
+			#content .content_1 .rightImg{
+				width: 350px;
+				height: 480px;
+				position: absolute;
+				right: -50px;
+				bottom: 0;
+			}
+			#content .content_1 #rightImg{
+				width: 350px;
+				height: 480px;
+				position: absolute;
+				right: -5px;
+				top: 0;
+			}
+			#content .content_1 #leftImg{
+				width: 350px;
+				height: 480px;
+				position: absolute;
+				left: -95px;
+				bottom: 0;
+			}
+			#content .content_1 #leftImg2{
+				width: 350px;
+				height: 480px;
+				position: absolute;
+				left: -44px;
+				top: 0;
+			}
+			#content .content_1 #leftImg2 img{
+				max-width: 215px;
+			}
+			#content .content_1 .left4 {
+				z-index: 500;
+				position: absolute;
+				top: 100px;
+				left:-250px;
+			}
+			#content .content_1 .center #rightImg4{
+				position: absolute;
+				right: -100px;
+				bottom:0 ;
+			}
+			#content .content_1 .center #rightImg5{
+				position: absolute;
+				right: -43px;
+				top: 0;
+			}

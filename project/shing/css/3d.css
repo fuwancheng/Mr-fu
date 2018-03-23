@@ -1,0 +1,125 @@
+	#content {
+				width: 100%;
+				background: #1b1b1b;
+				box-shadow: 0px -1px gray;
+				font-size: 0;
+				position: relative;
+			}
+			#content #show{
+				max-width: 1130px;
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			#content #show #showImg{
+				width: 100%;
+			}
+			#content #start{
+				width: 5%;
+				height: 10%;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translateY(-50%) translateX(-50%);
+			}
+			#content #mask{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				font-size: 22.8px;
+				color: white;
+				text-align: center;
+				background: black;
+				opacity: 0.5;
+			}
+			#content #mask p{
+				display: block;
+				padding: 10px;
+			}
+			
+			/*小图*/
+			#content_1{
+				width: 100%;
+			}
+			#content_1 ul{
+				width: 100%;
+				max-width: 1130px;
+				margin: 20px auto;
+				overflow: hidden;
+				text-align: center;
+			}
+			#content_1 ul li{
+				width: 31%;
+				max-width: 980px;
+				min-height: 186px;
+				text-align: center;
+				margin: 0 10px;
+				float: left;
+			}
+			#content_1 #smallImg_1{
+				position: relative;
+			}
+			#content_1 #smallImg_1:hover #begin_0{
+				display: none;
+			}
+			#content_1 #smallImg_1:hover #begin_1{
+				display: block;
+			}	
+			#content_1 .smallImg_1{
+				width: 100%;
+				max-width: 980px;
+				cursor: pointer;
+				
+			}
+			
+			#content_1 #begin{
+				width: 7%;
+				position: absolute;
+				left: 46%;
+				top:40%;
+			}
+			#content_1 #begin_1{
+				position: absolute;
+				left: 2px;
+				top: 0;
+				display: none;
+			}
+			#content_1 p{
+				color: #909090;
+				font-size: 16px;
+				margin: 15px 0;
+			}
+			@media only screen and (max-width: 872px) {
+				#content_1 ul li{
+				width: 31%;
+				max-width: 980px;
+				min-height: 186px;
+				text-align: center;
+				margin: 0 2px;
+				float: left;
+				}
+			}
+			@media only screen and (max-width:720px ) {
+				#content #mask{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				font-size: 15px;
+				color: white;
+				text-align: center;
+				background: black;
+				opacity: 0.5;
+			}
+			}
+			@media only screen and (max-width:560px ) {
+				#content #mask{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				font-size: 10px;
+				color: white;
+				text-align: center;
+				background: black;
+				opacity: 0.5;
+			}
+			}
