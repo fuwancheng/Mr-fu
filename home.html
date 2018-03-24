@@ -1,16 +1,446 @@
-<!DOCTYPE html>
 <!--https://fuwancheng.github.io/Mr-fu/img/bitbug_favicon.ico-->
+<!doctype html>
 <html>
+
 	<head>
-		<meta charset="UTF-8">
-		<title>首页</title>
-		<!--<link rel="shortcut icon" type="text/css" href="https://fuwancheng.github.io/Mr-fu/img/bitbug_favicon.ico"/>-->
-	</head>
-	<body>
-		<div id="">
-			嗨Girl
-			<a href="aboutme.html">点击</a>
+		<meta charset="utf-8">
+		<title>Mr-FU</title>
+
+		<link rel="stylesheet" type="text/css" href="css/jq22.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/team.css" media="screen">
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/lateral-eye.js"></script>
+		<script type="text/javascript" src="js/jquerytools.js"></script>
+		<script type="text/javascript" src="js/jquery.jkey-1.1.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+		<script src="js/hoverSlippery.js" type="text/javascript" charset="utf-8"></script>
+
+		<style>
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
 			
+			#jsi-snow-container {
+				min-width: 2000px;
+				min-height: 800px;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				pointer-events: none;
+				/*z-index:100001;*/
+			}
+			
+			#wrap {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+			
+			#center {
+				box-sizing: border-box;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				/*transform: translateY(-50%) translateX(-50%);*/
+				width: 300px;
+				height: 300px;
+				background: rgba(107, 142, 150, 0.6);
+				border-radius: 10px;
+				z-index: 500;
+				border: 1px solid black;
+				/*position: relative;*/
+			}
+			
+			#wrap #wrapper {
+				position: relative;
+				/*border: 1px solid black;*/
+				border-radius: 10px;
+				width: 105px;
+				height: 133px;
+			}
+			
+			#wrap #wrapper {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				margin: 0 auto;
+				z-index: 100053;
+				border-radius: 10px;
+				width: 105px;
+				height: 133px;
+			}
+			
+			#center #center-nav {
+				color: white;
+				width: 100%;
+			}
+			
+			#center #center-nav ul {
+				display: block;
+				width: 300px;
+				display: flex;
+				justify-content: space-around;
+			}
+			
+			#center #center-nav ul li {
+				display: inline-block;
+			}
+			
+			#center .close {
+				width: 20px;
+				position: absolute;
+				right: 2px;
+				top: 2px;
+				opacity: 0;
+				z-index: 600;
+			}
+			
+			#center .close:hover {
+				opacity: 1;
+			}
+			/*@keyframes navmove{
+				0%{
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				}
+				100%{
+				position: fixed;
+				top: -80%;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				}
+			}*/
+			
+			#wrap .aside {
+				position: fixed;
+				top: 2%;
+				left: 2%;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				color: white;
+				z-index: 500;
+				display: none;
+			}
+			
+			#wrap .aside ul li {
+				list-style: none;
+			}
+			
+			#wrap .aside-move {
+				position: fixed;
+				top: 20px;
+				left: 20px;
+				display: block;
+				width: 20px;
+				height: 20px;
+				border: 2px solid white;
+				border-radius: 5px;
+				z-index: 700;
+				display: none;
+			}
+			
+			#wrap .aside-move span {
+				display: block;
+				width: 20px;
+				margin-top: 5px;
+				border: 1px solid white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div class="aside-move">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="aside">
+				<ul>
+					<li>个人简介</li>
+					<li>未定义</li>
+					<li>未定义</li>
+					<li>未定义</li>
+				</ul>
+			</div>
+			<div id="center">
+				<img class="close" src="img/close.png" />
+
+				<div id="center-nav">
+					<p style="width: 100%;text-align: center;">欢迎访问Mr-FU的个人网站</p>
+					<a href=""><h5 style="width: 100%;text-align: center;">个人简历</h5></a>
+				</div>
+
+				<!--小人-->
+				<div id="wrapper" class="wrapslide1 lateralSlide ">
+					<div class="container" style="width: 105px;height: 133px;">
+						<ul class="the-team clearfix" style="width: auto; height: auto;">
+							<li>
+								<figure id="eye_you" class="eye"></figure>
+								<strong class="tooltip"><a href="http://www.jq22.com/"></a><small></small></strong> <strong class="name" style="width: 100%;text-align: center;">Hello,World</strong> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="jsi-snow-container" class="container"></div>
+
 		</div>
+
+		<script>
+			//点击关闭
+			$('.close').eq(0).click(function() {
+				console.log(123456);
+				$('#center').animate({
+					height: "10px",
+					width: "10px"
+				}, 1000);
+				$('#center').animate({
+					opacity: 0
+				}, 0);
+				$('.aside-move').show();
+			});
+			$('.aside-move').click(function() {
+				$('.aside').toggle();
+				console.log(123456);
+			})
+
+			//雪花代码
+			var RENDERER = {
+				SNOW_COUNT: {
+					INIT: 100,
+					DELTA: 1
+				},
+				BACKGROUND_COLOR: 'hsl(%h, 50%, %l%)',
+				INIT_HUE: 180,
+				DELTA_HUE: 0.1,
+
+				init: function() {
+					this.setParameters();
+					this.reconstructMethod();
+					this.createSnow(this.SNOW_COUNT.INIT * this.countRate, true);
+					this.render();
+				},
+
+				//	window.onresize = function(){
+
+				setParameters: function() {
+					this.$window = $(window);
+					this.$container = $('#jsi-snow-container');
+					this.width = this.$container.width();
+					this.height = this.$container.height();
+					console.log(this.width);
+					this.center = {
+						x: this.width / 2,
+						y: this.height / 2
+					};
+					this.countRate = this.width * this.height / 500 / 500;
+					this.canvas = $('<canvas />').attr({
+						width: this.width,
+						height: this.height
+					}).appendTo(this.$container).get(0);
+					this.context = this.canvas.getContext('2d');
+
+					this.radius = Math.sqrt(this.center.x * this.center.x + this.center.y * this.center.y);
+					this.hue = this.INIT_HUE;
+					this.snows = [];
+				},
+
+				reconstructMethod: function() {
+					this.render = this.render.bind(this);
+				},
+				createSnow: function(count, toRandomize) {
+					for(var i = 0; i < count; i++) {
+						this.snows.push(new SNOW(this.width, this.height, this.center, toRandomize));
+					}
+				},
+				render: function() {
+					requestAnimationFrame(this.render);
+
+					var gradient = this.context.createRadialGradient(this.center.x, this.center.y, 0, this.center.x, this.center.y, this.radius),
+						backgroundColor = this.BACKGROUND_COLOR.replace('%h', this.hue);
+
+					gradient.addColorStop(0, backgroundColor.replace('%l', 30));
+					gradient.addColorStop(0.2, backgroundColor.replace('%l', 20));
+					gradient.addColorStop(1, backgroundColor.replace('%l', 5));
+
+					this.context.fillStyle = gradient;
+					this.context.fillRect(0, 0, this.width, this.height);
+
+					for(var i = this.snows.length - 1; i >= 0; i--) {
+						if(!this.snows[i].render(this.context)) {
+							this.snows.splice(i, 1);
+						}
+					}
+					this.hue += this.DELTA_HUE;
+					this.hue %= 360;
+
+					this.createSnow(this.SNOW_COUNT.DELTA, false);
+				}
+			};
+			var SNOW = function(width, height, center, toRandomize) {
+				this.width = width;
+				this.height = height;
+				this.center = center;
+				this.init(toRandomize);
+			};
+			SNOW.prototype = {
+				RADIUS: 20,
+				OFFSET: 4,
+				INIT_POSITION_MARGIN: 20,
+				COLOR: 'rgba(255, 255, 255, 0.8)',
+				TOP_RADIUS: {
+					MIN: 1,
+					MAX: 3
+				},
+				SCALE: {
+					INIT: 0.04,
+					DELTA: 0.01
+				},
+				DELTA_ROTATE: {
+					MIN: -Math.PI / 180 / 2,
+					MAX: Math.PI / 180 / 2
+				},
+				THRESHOLD_TRANSPARENCY: 0.7,
+				VELOCITY: {
+					MIN: -1,
+					MAX: 1
+				},
+				LINE_WIDTH: 2,
+				BLUR: 10,
+
+				init: function(toRandomize) {
+					this.setParameters(toRandomize);
+					this.createSnow();
+				},
+				setParameters: function(toRandomize) {
+					if(!this.canvas) {
+						this.radius = this.RADIUS + this.TOP_RADIUS.MAX * 2 + this.LINE_WIDTH;
+						this.length = this.radius * 2;
+						this.canvas = $('<canvas />').attr({
+							width: this.length,
+							height: this.length
+						}).get(0);
+						this.context = this.canvas.getContext('2d');
+					}
+					this.topRadius = this.getRandomValue(this.TOP_RADIUS);
+
+					var theta = Math.PI * 2 * Math.random();
+
+					this.x = this.center.x + this.INIT_POSITION_MARGIN * Math.cos(theta);
+					this.y = this.center.y + this.INIT_POSITION_MARGIN * Math.sin(theta);
+					this.vx = this.getRandomValue(this.VELOCITY);
+					this.vy = this.getRandomValue(this.VELOCITY);
+
+					this.deltaRotate = this.getRandomValue(this.DELTA_ROTATE);
+					this.scale = this.SCALE.INIT;
+					this.deltaScale = 1 + this.SCALE.DELTA * 500 / Math.max(this.width, this.height);
+					this.rotate = 0;
+
+					if(toRandomize) {
+						for(var i = 0, count = Math.random() * 1000; i < count; i++) {
+							this.x += this.vx;
+							this.y += this.vy;
+							this.scale *= this.deltaScale;
+							this.rotate += this.deltaRotate;
+						}
+					}
+				},
+				getRandomValue: function(range) {
+					return range.MIN + (range.MAX - range.MIN) * Math.random();
+				},
+				createSnow: function() {
+					this.context.clearRect(0, 0, this.length, this.length);
+
+					this.context.save();
+					this.context.beginPath();
+					this.context.translate(this.radius, this.radius);
+					this.context.strokeStyle = this.COLOR;
+					this.context.lineWidth = this.LINE_WIDTH;
+					this.context.shadowColor = this.COLOR;
+					this.context.shadowBlur = this.BLUR;
+
+					var angle60 = Math.PI / 180 * 60,
+						sin60 = Math.sin(angle60),
+						cos60 = Math.cos(angle60),
+						threshold = Math.random() * this.RADIUS / this.OFFSET | 0,
+						rate = 0.5 + Math.random() * 0.5,
+						offsetY = this.OFFSET * Math.random() * 2,
+						offsetCount = this.RADIUS / this.OFFSET;
+
+					for(var i = 0; i < 6; i++) {
+						this.context.save();
+						this.context.rotate(angle60 * i);
+
+						for(var j = 0; j <= threshold; j++) {
+							var y = -this.OFFSET * j;
+
+							this.context.moveTo(0, y);
+							this.context.lineTo(y * sin60, y * cos60);
+						}
+						for(var j = threshold; j < offsetCount; j++) {
+							var y = -this.OFFSET * j,
+								x = j * (offsetCount - j + 1) * rate;
+
+							this.context.moveTo(x, y - offsetY);
+							this.context.lineTo(0, y);
+							this.context.lineTo(-x, y - offsetY);
+						}
+						this.context.moveTo(0, 0);
+						this.context.lineTo(0, -this.RADIUS);
+						this.context.arc(0, -this.RADIUS - this.topRadius, this.topRadius, Math.PI / 2, Math.PI * 2.5, false);
+						this.context.restore();
+					}
+					this.context.stroke();
+					this.context.restore();
+				},
+				render: function(context) {
+					context.save();
+
+					if(this.scale > this.THRESHOLD_TRANSPARENCY) {
+						context.globalAlpha = Math.max(0, (1 - this.scale) / (1 - this.THRESHOLD_TRANSPARENCY));
+
+						if(this.scale > 1 || this.x < -this.radius || this.x > this.width + this.radius || this.y < -this.radius || this.y > this.height + this.radius) {
+							context.restore();
+							return false;
+						}
+					}
+					context.translate(this.x, this.y);
+					context.rotate(this.rotate);
+					context.scale(this.scale, this.scale);
+					context.drawImage(this.canvas, -this.radius, -this.radius);
+					context.restore();
+
+					this.x += this.vx;
+					this.y += this.vy;
+					this.scale *= this.deltaScale;
+					this.rotate += this.deltaRotate;
+					return true;
+				}
+			};
+			$(function() {
+				RENDERER.init();
+			});
+		</script>
 	</body>
+
 </html>
