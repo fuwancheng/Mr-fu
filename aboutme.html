@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -19,7 +19,7 @@
         <style type="text/css">
         	#jsi-snow-container {
 				min-width: 2000px;
-				min-height: 800px;
+				min-height: 1000px;
 				position: fixed;
 				top: 0;
 				left: -5%;
@@ -34,6 +34,7 @@
 				background-image: url(img/head1.jpg);
 				background-size: 80px;
 			}
+			
         </style>
     </head>
     <body>
@@ -71,7 +72,7 @@
                   <div class="col-md-8 col-md-offset-2">
                     <div class="home-content">
                       <div class="home-heading">
-                        <h1><em>Mr-FU</em> 个人 简介</h1>
+                        <h1><em>Mr-FU</em> <a style="text-decoration: none;" href="http://www.500d.me/cvresume/5014114372/">在线简历</a> </h1>
                         <div id="headimg" style="display: inline-block;">
                         	
                         </div>
@@ -89,9 +90,9 @@
                           <div class="home-box-content">
                             <div class="left-text">
                               <h4>Web <em>前端</em> 之路</h4>
-                              <p>Stacked is brought to you by <a href="#" target="_blank">templatemo</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit etiam sit amet ante vehicula, aliquam mauris in, luctus neque.</p>
+                              <p>2016年毕业于 黄河科技学院  <a href="#" target="_blank">在校期间，课余时间自己也摸索着前端技术，对互联网有着浓厚的兴趣，对web前端有着深深的热爱，但没有个正规的引路者，进步还是缓慢的</a>. 2015年10月份开始在蓝鸥郑州校区开始系统化学习web前端技术, 纵使前路崎岖， 但只要信念在， 带上自己的兴趣出发， 我始终相信没有什么能够阻挡，兴趣带来的动力, <strong>Everything Will Be Ok !</strong>.</p>
                               <div class="primary-button">
-                                <a href="#2">Discover More</a>
+                                <a href="#2">About Me </a>
                               </div>
                             </div>
                             <div class="right-image">
@@ -115,21 +116,21 @@
                 <div class="row">
                   <div class="col-md-8 col-md-offset-2">
                     <div class="about-content">
-                      <div class="heading">
+                      <div class="heading" >
                         <h4>About me</h4>
                       </div>
                       <div class="row">
                         <div class="col-md-12">
                           <div class="about-box-content">
-                            <img src="img/about-image.png" alt="">
+                            <img src="img/web.jpg" alt="">
                           </div>
                         </div>
                         <div class="col-md-7 col-md-offset-5">
                           <div class="about-box-text">
-                            <h4>Curabitur varius sapien</h4>
-                            <p>Nulla vel accumsan dui. Aliquam tincidunt elit elit, nec iaculis neque interdum dictum. Donec venenatis quam enim, eu mattis arcu rhoncus id. Ut ac urna tellus.</p>
+                            <h4>沉浸于代码，享受之结果</h4>
+                            <p>2016年毕业于黄河科技学院，开始了追逐自己的梦想之路-Web前端，从事前端开发，每次敲代码总会给我带来无尽的享受，令我深深陷入其中无法自拔，特别是自己实现了需求之后，更多的是感到一种自信和成就感。</p>
                             <div class="primary-button">
-                              <a href="#3">Discover More</a>
+                              <a href="#3">Find More</a>
                             </div>
                           </div>
                         </div>
@@ -149,7 +150,7 @@
                   <div class="col-md-8 col-md-offset-2">
                     <div class="projects-content">
                       <div class="heading">
-                        <h4>Recent Projects</h4>
+                        <h4>职场 经历</h4>
                       </div>
                       <div class="row">
                         <div class="col-md-12">
@@ -283,10 +284,16 @@
                             <em>3344 Etiam mauris erat,
 								<br>Vestibulum eu augue nec, 10550</em></p>
                           </div>
+                          
                         </div>
+                       
                       </div>
+                      <div>
+                  	<p style="color: white;width: 100%;text-align: center;margin-top: 80px;">更新中...</p>
+                  </div>
                     </div>
                   </div>
+                  
                   <div class="col-md-12">
                     <div class="footer">
                       <p>Copyright &copy; 2017 Your Company 
@@ -308,6 +315,10 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script type="text/javascript">
+        	
+        	$(window).resize(function(){
+        		console.log($(window).height())
+        	})
         	//雪花代码
 			var RENDERER = {
 				SNOW_COUNT: {
